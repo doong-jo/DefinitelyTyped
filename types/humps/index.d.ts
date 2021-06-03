@@ -9,17 +9,17 @@ export function pascalize(value: string): string;
 export function decamelize(value: string, optionsOrProcessor?: OptionOrProcessor): string;
 export function depascalize(value: string, optionsOrProcessor?: OptionOrProcessor): string;
 
-export function camelizeKeys(str: object[], optionsOrProcessor?: OptionOrProcessor): object[];
-export function camelizeKeys(str: object, optionsOrProcessor?: OptionOrProcessor): object;
+export function camelizeKeys<ConvertObject>(str: object[], optionsOrProcessor?: OptionOrProcessor): ConvertObject[];
+export function camelizeKeys<ConvertObject>(str: object, optionsOrProcessor?: OptionOrProcessor): ConvertObject;
 
-export function pascalizeKeys(str: object[], optionsOrProcessor?: OptionOrProcessor): object[];
-export function pascalizeKeys(str: object, optionsOrProcessor?: OptionOrProcessor): object;
+export function pascalizeKeys<ConvertObject>(str: object[], optionsOrProcessor?: OptionOrProcessor): ConvertObject[];
+export function pascalizeKeys<ConvertObject>(str: object, optionsOrProcessor?: OptionOrProcessor): ConvertObject;
 
-export function decamelizeKeys(str: object[], optionsOrProcessor?: OptionOrProcessor): object[];
-export function decamelizeKeys(str: object, optionsOrProcessor?: OptionOrProcessor): object;
+export function decamelizeKeys<ConvertObject>(str: object[], optionsOrProcessor?: OptionOrProcessor): ConvertObject[];
+export function decamelizeKeys<ConvertObject>(str: object, optionsOrProcessor?: OptionOrProcessor): ConvertObject;
 
-export function depascalizeKeys(str: object[], optionsOrProcessor?: OptionOrProcessor): object[];
-export function depascalizeKeys(str: object, optionsOrProcessor?: OptionOrProcessor): object;
+export function depascalizeKeys<ConvertObject>(str: object[], optionsOrProcessor?: OptionOrProcessor): ConvertObject[];
+export function depascalizeKeys<ConvertObject>(str: object, optionsOrProcessor?: OptionOrProcessor): ConvertObject;
 
 export interface HumpsOptions {
     separator?: string;
